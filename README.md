@@ -3,7 +3,7 @@
 Live site: https://coin.chernivtsi.space
 
 ## About
-Coin Apartments & Poshtel — хостел і апартаменти у Чернівцях. Односторінковий лендинг без фото (`photos_source: null`): типографіка та CSS/SVG-графіка.
+Coin Apartments & Poshtel — хостел і апартаменти у Чернівцях. Односторінковий лендинг. Фото закладу немає (`photos_source: null`), тому hero типографічний (CSS/SVG), а єдині фото — міста Чернівців з Pexels (див. Photos).
 
 ## Hero concept
 Викарбувана монета: латунний диск із рифленим гуртом (repeating-conic-gradient), написом по колу APARTMENTS · POSHTEL · ЧЕРНІВЦІ і «COIN» у центрі, на темному тлі.
@@ -36,6 +36,13 @@ Booking.com 8.3/10 (803), Google 4.3/5 (413). Знімок на 30.09.2026, пл
 
 ## Forms
 HotelOS (`ch-coin`): `stay-request` (хостельний варіант зі статтю гостей). Документ `hotels/ch-coin` у Firestore треба створити вручну, інакше правила відхилять заявки.
+
+## Photos
+Лише фото міста (не готелю), з Pexels, підключені за прямими посиланнями images.pexels.com (без копій у репо), з підписами та авторами на сторінці:
+
+- Резиденція буковинських митрополитів, нині Чернівецький університет: pexels.com/photo/38163639 (Natalia Sevruk)
+- Дворик, оповитий плющем: pexels.com/photo/17268819 (Андрій Копічевський)
+- Цегляні склепіння: pexels.com/photo/17280128 (Андрій Копічевський)
 
 ## SEO
 Title і description з маніфесту, canonical, Open Graph, `geo.*`, JSON-LD `Hostel` лише з підтвердженими полями (без numberOfRooms, starRating, aggregateRating), `robots.txt`, `sitemap.xml`, `404.html`.

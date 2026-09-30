@@ -35,7 +35,7 @@ Booking.com 8.3/10 (803), Google 4.3/5 (413). Знімок на 30.09.2026, пл
 Вулиця й номер будинку (Google Maps показує Казармений пров., 7, Booking.com — Головна, 119; конфлікт не вирішено), тому немає вбудованої карти й streetAddress у schema; кількість кімнат і ліжок, зірковість, email, сайт, Instagram. Форма — хостельний варіант із типом кімнати та статтю гостей.
 
 ## Forms
-HotelOS (`kp-coin`): `stay-request` (хостельний варіант зі статтю гостей). Документ `hotels/kp-coin` у Firestore треба створити вручну, інакше правила відхилять заявки.
+HotelOS (`ch-coin`): `stay-request` (хостельний варіант зі статтю гостей). Документ `hotels/ch-coin` у Firestore треба створити вручну, інакше правила відхилять заявки.
 
 ## SEO
 Title і description з маніфесту, canonical, Open Graph, `geo.*`, JSON-LD `Hostel` лише з підтвердженими полями (без numberOfRooms, starRating, aggregateRating), `robots.txt`, `sitemap.xml`, `404.html`.

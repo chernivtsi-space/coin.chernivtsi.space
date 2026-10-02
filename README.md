@@ -45,10 +45,21 @@ Booking.com 8.3/10 (803), Google 4.3/5 (413). Знімок на 30.09.2026, пл
 - Address: не публікується (конфлікт джерел), лише «Чернівці»
 
 ## Sources
-Booking.com listing text (description, rooms, breakfast, house rules; guest reviews ignored), captured 30.09.2026, plus the official site where there is one. Verbatim quotes: `facts.json` in the build scratchpad.
+Booking.com listing text (description, rooms, breakfast, house rules; guest reviews ignored), captured 30.09.2026, plus the official site where there is one. Verbatim quotes: `shared/build/facts.json` у робочому просторі (поза репозиторієм сайту).
+
+## Property-specific sections
+- `#together` Кухня, лаунж і бар
 
 ## Not published
-Вулиця й номер будинку (Google Maps показує Казармений пров., 7, Booking.com — Головна, 119; конфлікт не вирішено), тому немає вбудованої карти й streetAddress у schema; кількість кімнат і ліжок, зірковість, email, сайт, Instagram. Форма — хостельний варіант із типом кімнати та статтю гостей.
+Вулиця й номер будинку (Google Maps показує Казармений пров., 7, Booking.com — Головна, 119; конфлікт не вирішено), тому немає вбудованої карти й streetAddress у schema; кількість кімнат і ліжок, зірковість, email, сайт, Instagram, відстань до центру. Форма — хостельний варіант із типом кімнати та статтю гостей.
+
+## Content TODO (не показується на сторінці)
+- [ ] TODO: ВИРІШИТИ КОНФЛІКТ АДРЕСИ з власником (Казармений пров., 7 чи Головна, 119; можливо, два входи) — тоді додати адресу, карту й streetAddress
+- [ ] TODO: уточнити умови довгого проживання (тижневі/місячні тарифи) — лише тоді додати секцію для довгих поїздок
+- [ ] TODO: уточнити, чи трансфер платний
+- [ ] TODO: Booking дає мови рецепції лише англійська й російська — уточнити, чи є українська
+- [ ] TODO: отримати власні фото закладу (фасад, рецепція, номери, ванні) і погодити їх використання — потім додати галерею
+- [ ] TODO: перевірити ціни й наявність через сам готель; на сторінці цін немає
 
 ## Forms
 HotelOS (`ch-coin`): `stay-request` (хостельний варіант зі статтю гостей). Документ `hotels/ch-coin` у Firestore треба створити вручну, інакше правила відхилять заявки.
